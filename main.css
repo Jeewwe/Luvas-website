@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+img[alt="Imagem da loja EBAC Motors"] {
+    border-radius: 20px; 
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section h2 {
+    margin-bottom: 17px;
+}
+
+section p {
+    text-align: justify;
+}
+
+header, footer {
+    background-color: #000000;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container,
+footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.form-container {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+section {
+    padding: 48px 0;
+}
+
+.lista-luvas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lista-luvas li {
+    list-style: none;
+    width: 23%; 
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+.luva-classe {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.luva-classe img {
+    max-width: 100%;
+}
+
+.luva-classe h3 {
+    margin: 16px 0;
+}
+
+.luva-classe p {
+    flex-grow: 1;
+}
+
+.price {
+    display: block;
+    margin: 16px 0;
+}
+
+.price a {
+    color: rgb(255, 31, 31);
+    font-size: 14px;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+.price strong {
+    color: green;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    align-self: flex-end;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    width: 100%;
+    padding: 16px 0; /* Ajuste o padding conforme necessário */
+    text-align: center; /* Centraliza o texto dentro do footer */
+}
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header .form-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #sobre-a-loja .container-flex {
+        flex-direction: column; /* Altera para coluna para telas menores */
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .lista-luvas li {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%; /* Ajusta a largura máxima para telas de iPad */
+    }
+
+    .lista-luvas li {
+        width: 48%; /* Duas colunas de luvas na tela de iPad */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Estilos adicionais para telas maiores, como desktops */
+}
